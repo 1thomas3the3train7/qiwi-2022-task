@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: qiwi-sub-service
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+    hibernate:
+      ddl-auto: create-drop
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=projectservice
+    username: postgres
+    password: rootaye2
+    driver-class-name: org.postgresql.Driver
+server:
+  port: 8080
+jwt:
+  accessToken: "qBTmv4oXFFR2GwjexDJ4t6fsIUIUhhXqlktXjXdkcyygs8nPVEwMfo29VDRRepYDVV5IkIxBMzr7OEHXEHd37w=="
+  refreshToken: "qBTmv4oXFFR2GwjexDJ4t6fsIUIUhhXqlktXjXdkcyygs8nPVEwMfo29VDRRepYDVV5IkIxBMzr7OEHXEHd37w=="
